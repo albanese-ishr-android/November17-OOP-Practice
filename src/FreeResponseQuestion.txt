@@ -1,0 +1,12 @@
+12. (a) Construct a diagram showing the relationships between the Payment, FoodItem,
+DrinkItem, and Item classes. You do not need to include the names of attributes
+or methods. [3]
+
+(b) By making reference to any of the above classes, describe two benefits that a
+programming team would gain from the use of encapsulation. [6]
+The company that owns this restaurant also owns hotels, shops, and a car hire business.
+The programs that manage the finances of these different businesses include classes similar
+to the ones shown in this paper.
+
+(c) Explain how inheritance could be used as a tool to both improve the clarity of the
+design and to reduce the amount of code that needs to be written. [4]
