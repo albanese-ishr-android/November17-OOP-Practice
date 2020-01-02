@@ -17,6 +17,7 @@ public class Payment {
     private static double foodTax = 0.2; // 20 % sales tax added to
     private static double drinkTax = 0.1; // 10 % sales tax added to
 
+    private FoodItem[] fi = new FoodItem[100];
     private int fiCount = 0;
 
     // all food prices
@@ -33,7 +34,10 @@ public class Payment {
 
     //TODO: 5 The Payment class method addFoodItem() is passed a FoodItem object as a parameter. Complete this method.
 
-    addFoodItem()
+    public void addFoodItem(FoodItem foodItem) {
+        fi[fiCount] = foodItem;
+        fiCount++;
+    }
 
 
     // addDrinkItem() – this method adds a new DrinkItem object
