@@ -26,6 +26,7 @@ public class Payment {
 
     // addDrinkItem() – this method adds a new DrinkItem object
 
+    //TODO 8: Implement this method.
     public static double findPrice(Item[] pl, String c) {
         //code missing
 
@@ -33,6 +34,7 @@ public class Payment {
     }
 
 /*
+TODO 9: Construct this method.
 calculateBill() {
 // This method returns the bill (the total value of the items consumed for a particular table)
     }
