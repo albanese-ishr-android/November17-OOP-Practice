@@ -61,12 +61,12 @@ public class Payment {
         return price;
     }
 
-/*
-TODO 9: Construct this method.
-calculateBill() {
-// This method returns the bill (the total value of the items consumed for a particular table)
-    }
- */
+//TODO 9: Construct this method.
+public double calculateBill(Item[] items) {
+        
+
+    return 0;
+}
 
 //Getters and setters.
 
