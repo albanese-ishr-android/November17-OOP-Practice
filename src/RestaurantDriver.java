@@ -39,5 +39,15 @@ public class RestaurantDriver {
          (i) The number of drink items ordered by table 40. [1]
          (ii) The item code of the third food item ordered by table 2.
          */
+
+        //The number of drink items ordered by table 40:
+        Payment table40 = tables[40]; //Get the table object
+        System.out.println(table40.getDiCount()); //The the drink item count variable for the table.
+
+        //The item code of the third food item ordered by table 2.
+        Payment table2 = tables[2]; //Get the payment object for the table.
+        FoodItem[] foodItemArray = table2.getFi(); //Get the array of food items.
+        System.out.println(foodItemArray[2].getItemCode());
+        
     }
 }
