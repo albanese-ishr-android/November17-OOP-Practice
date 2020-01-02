@@ -1,3 +1,4 @@
+//The price of each item is stored in an object of the Item class.
 public class Item {
     private String code; // item code
     private String name; // item name

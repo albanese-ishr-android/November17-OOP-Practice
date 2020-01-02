@@ -1,4 +1,6 @@
 public class FoodItem {
+
+    //TODO: 3 Using two examples from this class (or any other one) explain the benefits of using different data types.
     private String itemCode;
     private int quantity;
 
