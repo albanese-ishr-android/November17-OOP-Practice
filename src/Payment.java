@@ -85,6 +85,12 @@ public double calculateBill(Item[] items) {
     return 0;
 }
 
+
+    public void addDrinkItem(DrinkItem drinkItem) {
+        di[diCount] = drinkItem;
+        diCount++;
+    }
+
 //Getters and setters.
 
     public DrinkItem getDi(int x) {
