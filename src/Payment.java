@@ -63,7 +63,24 @@ public class Payment {
 
 //TODO 9: Construct this method.
 public double calculateBill(Item[] items) {
-        
+
+    double bill = 0;
+
+    for (int i = 0; i < fi.length; i++) {
+        FoodItem currentFoodItem = fi[i];
+        String code = currentFoodItem.getItemCode();
+        double priceCurrentFoodItem = findPrice(items, code);
+        double priceWithTax = priceCurrentFoodItem * currentFoodItem.getQuantity() * foodTax;
+        bill = bill + priceWithTax;
+    }
+
+    for (int i = 0; i < di.length; i++) {
+        DrinkItem currentDrinkItem = di[i];
+        String code = currentDrinkItem.getItemCode();
+        double priceCurrentDrinkItem = findPrice(items, code);
+        double priceWithTax = priceCurrentDrinkItem * currentDrinkItem.getQuantity() * drinkTax;
+        bill = bill + priceWithTax;
+    }
 
     return 0;
 }
