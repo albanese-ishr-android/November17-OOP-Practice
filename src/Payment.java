@@ -44,9 +44,21 @@ public class Payment {
 
     //TODO 8: Implement this method.
     public static double findPrice(Item[] pl, String c) {
-        //code missing
 
-        return 0; //This is not the right return value.
+        Boolean isFound = false;
+        int i = 0;
+        double price = 0;
+
+        while (!isFound) {
+            Item item = pl[i];
+            if (item.getCode() == c) {
+                price = item.getPrice();
+                isFound = true;
+            }
+            i++;
+        }
+
+        return price;
     }
 
 /*
@@ -56,8 +68,57 @@ calculateBill() {
     }
  */
 
+//Getters and setters.
+
     public DrinkItem getDi(int x) {
         return di[x];
     }
 
+    public static double getFoodTax() {
+        return foodTax;
+    }
+
+    public static void setFoodTax(double foodTax) {
+        Payment.foodTax = foodTax;
+    }
+
+    public static double getDrinkTax() {
+        return drinkTax;
+    }
+
+    public static void setDrinkTax(double drinkTax) {
+        Payment.drinkTax = drinkTax;
+    }
+
+    public FoodItem[] getFi() {
+        return fi;
+    }
+
+    public void setFi(FoodItem[] fi) {
+        this.fi = fi;
+    }
+
+    public int getFiCount() {
+        return fiCount;
+    }
+
+    public void setFiCount(int fiCount) {
+        this.fiCount = fiCount;
+    }
+
+    public DrinkItem[] getDi() {
+        return di;
+    }
+
+    public void setDi(DrinkItem[] di) {
+        this.di = di;
+    }
+
+    public int getDiCount() {
+        return diCount;
+    }
+
+    public void setDiCount(int diCount) {
+        this.diCount = diCount;
+    }
 }
