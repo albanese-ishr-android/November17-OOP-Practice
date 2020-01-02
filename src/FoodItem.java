@@ -6,5 +6,24 @@ public class FoodItem {
         itemCode = x;
         quantity = y;
     }
-// all accessor and mutator methods are included
+
+
+    /*
+    Getters and setters are not in the exam paper but they are there.
+     */
+    public String getItemCode() {
+        return itemCode;
+    }
+
+    public void setItemCode(String itemCode) {
+        this.itemCode = itemCode;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
 }
