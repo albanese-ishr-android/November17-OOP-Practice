@@ -4,11 +4,16 @@ public class Item {
     private String name; // item name
     private double price; // unit price before tax
 
+    public Item(String code, String name, double price) {
+        this.code = code;
+        this.name = name;
+        this.price = price;
+    }
 
     /*
-    These getters and setters are not in the exam paper. They are there though. They are not printed just to save
-    paper.
-     */
+        These getters and setters are not in the exam paper. They are there though. They are not printed just to save
+        paper.
+         */
     public String getCode() {
         return code;
     }
