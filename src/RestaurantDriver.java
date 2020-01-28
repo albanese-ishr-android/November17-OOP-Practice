@@ -20,7 +20,8 @@ public class RestaurantDriver {
          State the output of this code.
          */
 
-        tables[1] = new Payment();
+        /*
+                tables[1] = new Payment();
         tables[2] = new Payment();
         FoodItem a = new FoodItem("f102", 2);
         FoodItem b = new FoodItem("f100", 1);
@@ -32,6 +33,8 @@ public class RestaurantDriver {
         System.out.println(tables[1].getFiCount());
         System.out.println(Payment.getFoodTax());
         System.out.println(tables[2].getDi(1).getItemCode());
+         */
+
 
 
         /*
