@@ -1,3 +1,4 @@
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class HLQuestions {
@@ -8,6 +9,7 @@ public class HLQuestions {
 
         initializeLinkedList();
         changePrice(priceLL, "MEATVEGDSSD", 43.32);
+        changePriceIterator(priceLL, "CARB", 23.23);
     }
 
 
@@ -35,8 +37,23 @@ public class HLQuestions {
     }
 
 
-    public static void changePriceIterator(LinkedList<Item> itemList, String itemCode, float newPrice) {
+    public static void changePriceIterator(LinkedList<Item> itemList, String itemCode, double newPrice) {
 
+        boolean itemFound = false;
+        Iterator<Item> iterator = itemList.iterator();
+
+        while (iterator.hasNext() && !itemFound) {
+            Item currentItem = iterator.next();
+            if (currentItem.getCode().equals(itemCode)) {
+                currentItem.setPrice(newPrice);
+                System.out.println("Price Updated.");
+                itemFound = true;
+            }
+        }
+
+        if (!itemFound) {
+            System.out.println("Item not found.");
+        }
     }
 
     public static void initializeLinkedList() {
